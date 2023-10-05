@@ -1,0 +1,16 @@
+.main img{
+    width: 1000px;
+}
+.overlayLeft img{
+    position: absolute;
+    width: 500px;
+    bottom: 235px;
+    left: 9px;
+}
+
+.overlayRight img{
+    position: absolute;
+    width: 150px;
+    left: 850px;
+    bottom: 235px;
+}
