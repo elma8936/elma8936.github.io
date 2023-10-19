@@ -7,7 +7,7 @@ body{
     background-color: indianred;
 }
 
-#box1:hover{
+#box1:hover{ /*pseudo class*/
     background-color: purple;
 }
 

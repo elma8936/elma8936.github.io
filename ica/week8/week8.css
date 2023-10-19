@@ -50,5 +50,6 @@ p{
 
 #hover:hover{
     font-size: 15vw;
-    color: purple;
+    color: pink;
+    background-color: black;
 }
