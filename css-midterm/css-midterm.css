@@ -15,9 +15,12 @@
         text-align: center;
     }
 
+    h1{
+        color: antiquewhite;
+    }
+
     body{
         background-color: #671e1e;
-        color: white;
     }
 
     .heading{
@@ -78,7 +81,80 @@
 
 /* Phone */
 @media screen and (max-width: 600px){
+    .topImage{
+        background-color: lightcoral;
+        background-image: url(coloradoPhone.png);
+        background-size: cover;
+        backdrop-filter: blur;
+
+        padding-top: 350px;
+        padding-bottom: 350px;
+
+        color: white;
+        margin: 0; /*how to remove padding */
+        text-align: center;
+    }
+
+    h1{
+        color: antiquewhite;
+    }
+
     body{
         background-color: #671e1e;
+        font-size: 1;
+    }
+
+    .heading{
+        text-align: center;
+        background-color: #964022; 
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        position: sticky;
+        top: 0%;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        background-color: #671e1e;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    h3{
+        /* border-radius: 3px;
+        border-style: solid;
+        border-color: black; */
+        text-align: center;
+    }
+    
+    h3:hover{
+        background-color: antiquewhite;
+        color: black;
+    }
+
+    h2{
+        color: antiquewhite;
+    }
+
+    p{
+        text-align: right;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    a{
+        color:antiquewhite;
+    }
+
+    .footing{
+        text-align: center;
+        background-color: #964022; 
+        padding-top: .5px;
+        padding-bottom: .5px;
+        position: sticky;
+        top: 100%;
     }
 }

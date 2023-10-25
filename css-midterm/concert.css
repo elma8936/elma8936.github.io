@@ -4,11 +4,33 @@ body{
 }
 
 h3{
-    color:white;
+    color:antiquewhite;
     font-size: 27px;
 }
 
 p{
     font-size: 25px;
-    color: white;
+    color: antiquewhite;
+}
+
+.button{
+    text-align: left;
+    background-color: antiquewhite;
+    width: 130px;
+    padding: 1px;
+    font-size: larger;
+    border-radius: 5%;
+    display: grid; /*allows whole box to be a button */
+}
+
+.button:hover{
+    background-color: white;
+}
+
+h5{
+    color: #964022;
+}
+
+a{
+    text-decoration: none;  
 }
