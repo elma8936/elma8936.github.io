@@ -5,7 +5,7 @@
         background-color: lightcoral;
         background-image: url(coloradoSymphony.jpeg);
         background-size: cover;
-        backdrop-filter: blur;
+        background-position: center center;
 
         padding-top: 350px;
         padding-bottom: 350px;
@@ -41,9 +41,6 @@
     }
 
     h3{
-        /* border-radius: 3px;
-        border-style: solid;
-        border-color: black; */
         text-align: center;
     }
     
@@ -97,11 +94,11 @@
 
     h1{
         color: antiquewhite;
+        font-size: 2vw;
     }
 
     body{
         background-color: #671e1e;
-        font-size: 1;
     }
 
     .heading{
@@ -122,10 +119,8 @@
     }
 
     h3{
-        /* border-radius: 3px;
-        border-style: solid;
-        border-color: black; */
         text-align: center;
+        font-size: 2vw;
     }
     
     h3:hover{
@@ -135,6 +130,8 @@
 
     h2{
         color: antiquewhite;
+        font-size: 2vw;
+
     }
 
     p{
