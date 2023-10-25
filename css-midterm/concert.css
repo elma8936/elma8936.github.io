@@ -1,36 +1,82 @@
-body{
-    background-color: #964022;
-    text-align: center;
+@media screen and (min-width: 600px){
+    body{
+        background-color: #964022;
+        text-align: center;
+    }
+    
+    h3{
+        color:antiquewhite;
+        font-size: 27px;
+    }
+    
+    p{
+        font-size: 25px;
+        color: antiquewhite;
+    }
+    
+    .button{
+        text-align: left;
+        background-color: antiquewhite;
+        width: 130px;
+        padding: 1px;
+        font-size: larger;
+        border-radius: 5%;
+        display: grid; /*allows whole box to be a button */
+    }
+    
+    .button:hover{
+        background-color: white;
+    }
+    
+    h5{
+        color: #964022;
+    }
+    
+    a{
+        text-decoration: none;  
+    }
 }
 
-h3{
-    color:antiquewhite;
-    font-size: 27px;
+@media screen and (max-width: 600px){
+    body{
+        background-color: #964022;
+        text-align: center;
+    }
+    
+    h3{
+        color:antiquewhite;
+        font-size: 3vw;
+    }
+    
+    p{
+        color: antiquewhite;
+        font-size: 3vw;
+    }
+    
+    .button{
+        text-align: left;
+        font-size: 3vw;
+        background-color: antiquewhite;
+        width: 130px;
+        padding: 1px;
+        font-size: larger;
+        border-radius: 5%;
+        display: grid; /*allows whole box to be a button */
+    }
+    
+    .button:hover{
+        background-color: white;
+    }
+    
+    h5{
+        color: #964022;
+        font-size: 3vw;
+    }
+    
+    a{
+        text-decoration: none;  
+    }
 }
 
-p{
-    font-size: 25px;
-    color: antiquewhite;
-}
 
-.button{
-    text-align: left;
-    background-color: antiquewhite;
-    width: 130px;
-    padding: 1px;
-    font-size: larger;
-    border-radius: 5%;
-    display: grid; /*allows whole box to be a button */
-}
 
-.button:hover{
-    background-color: white;
-}
-
-h5{
-    color: #964022;
-}
-
-a{
-    text-decoration: none;  
-}
