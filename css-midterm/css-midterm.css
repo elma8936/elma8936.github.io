@@ -11,8 +11,12 @@
         padding-bottom: 350px;
 
         color: white;
-        margin: 0; /*how to remove padding */
         text-align: center;
+        text-shadow: /*https://wpshout.com/quick-guides/create-text-outline-css/#gref */
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
     }
 
     h1{
@@ -21,6 +25,7 @@
 
     body{
         background-color: #671e1e;
+        margin: 0;
     }
 
     .heading{
@@ -51,6 +56,8 @@
 
     h2{
         color: antiquewhite;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     p{
@@ -94,10 +101,16 @@
 
     h1{
         color: antiquewhite;
+        text-shadow: /*https://wpshout.com/quick-guides/create-text-outline-css/#gref */
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000; 
     }
 
     body{
         background-color: #671e1e;
+        margin: 0;
     }
 
     .heading{
@@ -128,6 +141,8 @@
 
     h2{
         color: antiquewhite;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     p{
