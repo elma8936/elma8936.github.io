@@ -1,5 +1,5 @@
 /* Computer */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 400px){
 
     .topImage{
         background-color: lightcoral;
@@ -84,7 +84,7 @@
 }
 
 /* Phone */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 400px){
     .topImage{
         background-color: lightcoral;
         background-image: url(coloradoPhone.png);

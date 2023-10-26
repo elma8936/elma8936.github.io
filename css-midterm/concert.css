@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 400px){
     body{
         background-color: #964022;
         text-align: center;
@@ -37,7 +37,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 400px){
     body{
         background-color: #964022;
         text-align: center;
@@ -77,6 +77,3 @@
         text-decoration: none;  
     }
 }
-
-
-
