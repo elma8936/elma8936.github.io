@@ -89,7 +89,6 @@
         background-color: lightcoral;
         background-image: url(coloradoPhone.png);
         background-size: cover;
-        backdrop-filter: blur;
 
         padding-top: 350px;
         padding-bottom: 350px;
