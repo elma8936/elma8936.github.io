@@ -64,7 +64,7 @@ function draw(){
         ctx.arc(
             random(canvas.width),
             random(canvas.height),
-            random(70), 0, 2 * Math.PI,
+            random(120), 0, 2 * Math.PI,
         );
 
         ctx.fill();
