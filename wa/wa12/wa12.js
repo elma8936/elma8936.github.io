@@ -45,6 +45,7 @@ async function getImage() {
         
         console.log(json);
         displayImage(json['message']);
+        
     }
     catch(err) {
         console.log(err);
@@ -55,9 +56,10 @@ async function getImage() {
 function displayImage(image)
 {
     answerTxt.textContent = image;
+
 }
 
-getImage();
+//getImage();
 
 
    
