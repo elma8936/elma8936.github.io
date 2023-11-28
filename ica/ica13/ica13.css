@@ -10,7 +10,6 @@ html, body {
   body {
     overflow: hidden;
     height: inherit;
-    background-color: black;
   }
   
   h1 {

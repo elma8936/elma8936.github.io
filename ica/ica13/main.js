@@ -36,27 +36,23 @@ class Ball{
     ctx.fill();
   }
 
-  update(){
-    //right edge fo the screen 
-    if((this.x + this.size) >= width){
+  update() {
+    if ((this.x + this.size) >= width) {
       this.velX = -(this.velX);
     }
-
-    //left edge
-    if((this.x - this.size) <= 0){
+  
+    if ((this.x - this.size) <= 0) {
       this.velX = -(this.velX);
     }
-
-    //bottom of the screen
-    if((this.y + this.size) >= height){
+  
+    if ((this.y + this.size) >= height) {
       this.velY = -(this.velY);
     }
-
-    //top of screen 
-    if((this.y - this.size) <= 0){
+  
+    if ((this.y - this.size) <= 0) {
       this.velY = -(this.velY);
     }
-
+  
     this.x += this.velX;
     this.y += this.velY;
   }
@@ -93,11 +89,11 @@ while(balls.length < 25){
   balls.push(ball);
 }
 
-function loop(){
-  ctx.fillstyle = "rgba(0,0,0,0.25)";
-  ctx.fillRect(0,0,width,height);
+function loop() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillRect(0, 0, width, height);
 
-  for(const ball of balls){
+  for (const ball of balls) {
     ball.draw();
     ball.update();
     ball.collisionDetect();
