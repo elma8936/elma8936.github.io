@@ -1,0 +1,86 @@
+body{
+    background-color: lightblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+}
+
+.front{
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    position: absolute;
+    text-align:center;
+    font-size: 65px;
+    visibility: visible;
+}
+
+.back{
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    position: absolute;
+    text-align:center;
+    font-size: 65px;
+    visibility: visible;
+}
+
+.content{
+    background-color: white;
+    margin: auto;
+    width: 40%;
+    height: 400px;
+    padding: 10px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.button{
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+}
+
+.phoneNumber {
+    background-color: gray;
+    color: white;
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+}
+
+
+.submit{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    bottom: 10px;
+    text-align: center;
+}
+
+.submit:hover{
+    background-color: blue;
+}

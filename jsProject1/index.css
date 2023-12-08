@@ -1,0 +1,96 @@
+/*reset button*/
+.button{
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 40px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* sizing of front image */
+img{
+    height: 50px;
+    width: 30px;
+}
+
+/*styling*/
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    margin: 0;
+}
+
+/* box that contains cards*/
+.content{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Unordered list of cards*/
+.cards{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+/*each card*/
+.card{
+    position: relative;
+    width: 100%;
+    height:100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* unordered list and card */
+.cards .card{
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/*when you hover on front of card*/
+.card:hover .front{
+    transform: rotateY(180deg);
+    background-color: red;
+}
+
+
+.card:hover .back{
+    transform: rotateY(0);
+    background-color: blue;
+}
+
+/*  */
+.front .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front{
+    background-color: #bbb;
+}
+
+.back{
+    background-color: red;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+
+/*cover image - shaded*/
