@@ -6,7 +6,7 @@ let answerTxt = document.querySelector('#js-answer-text');
 
 let answer = '';
 
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestio';
 
 async function getQuote() {
   
