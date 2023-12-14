@@ -38,6 +38,9 @@ function flipCard(){
                 firstCard.classList.toggle("flipCard");
                 secondCard.classList.toggle("flipCard");
             }, 1000);
+            // setTimeout(() => {
+            //     shuffleCards();
+            // }, 1700);
         }
         else{
             console.log("not a mactch");
@@ -95,6 +98,7 @@ function random(min, max) {
     return num;
 }
 
+shuffleCards();
 
 
 
