@@ -1,0 +1,152 @@
+battery of drone in kilometers = k
+wireless chargers = n
+distance of chargers from boulder = distance[]
+distance to denver = d
+
+current distance = currnet = 0;
+number of stops = 0;
+largest = 0;
+stops []
+
+while(current < d){
+    for(i = 1; i < n; n++){
+        if(current < distance[i] && (distance[i]-current)<= k)
+        {
+            if(distance[i] > largest)
+            {
+                largest = distance[i];
+            }
+        }
+    }
+    stops.append[largest];
+    number of stops +=1;
+    current = current + largest;
+}
+
+procedure GreedyMatching(Graph G)
+ Queue Q = []
+ Q.addAll(E(G))
+ M = 0
+ while Q != [] {
+    e ← Q.pull()
+ }
+ if e does not share an endpoint with any edge in M then
+ M.add(e)
+
+
+
+
+problem 2: 
+array of nodes (V,E)
+array of all the times for 4 to 11pm {4,5,6,7,8,9,10,11}
+used nodes: []
+sort array of nodes from largest E edges to smallest 
+while (times is not empty)
+starting at arr[1] put into used nodes 
+check if all time is considered
+    traverse all of the node's edges, checking if all the time is filled 
+    check the time and removed from array
+
+
+1. Make Graph
+2. Sort graph by # of edges in desending order
+3. Choose with the first vertex (with highest degree)
+4. Traverse graph to see if everything is connected 
+5. If not, go to second highest degree and choose that vertex
+6. Continue until every vetex is connected
+
+Verticies - list of shifts
+Edges - # of shifts that overlap
+G(V,E)
+Sort G by # of edges in desending order
+A = 0
+while (G != 0){
+    e = G.poll()
+    if(e does not share an endpoint with an any edge in) {
+        A.add(e)
+    }
+}
+
+herosVillians(G(V,E) int start, int group[])
+{
+    \\0 = hero 
+    \\1 = villian 
+    G.size = n
+    queue q
+    visited[n] = false
+    visited[start] = true
+    group[start] = 0
+    q.push(start)
+
+for(x: visited[x] = false){
+    while(q not empty)
+    {
+        curr = q.pop()
+        for(i to adj[curr])
+        {
+            if(not visited[i]){
+                if(group[i] = -1){
+                    group[i] = 1 - group[curr]
+                    visited[i] = true
+                    q.push(i);
+                }
+                else if(group[i] = group[curr]){
+                    return false
+                }
+            }
+        }
+    }
+    return true
+}
+}
+
+\\Heros = group[x] = 0
+\\Villians = ground[x] = 1
+
+
+battery(){
+    queue q;
+    
+}
+
+
+int binarySearch(arr[], low, high, val){
+    if(low more than high){
+        return -1
+    }
+
+    mid = low + (high-low)/2
+
+    if(arr[mid] == val){
+        return mid;
+    } else if(arr[mid]> val){
+        return binarySearch(arr[], low, mid-1, val)
+    }else if(arr[mid]>val){
+        return binarySearch(arr[], mid +1, high, val)
+    }
+}
+
+
+int fib(int n)
+if(n<=1){
+    return;
+}
+return fib(n-1) + fib(n-2)
+
+
+
+
+int fib(int n)
+{
+    int term[1000];
+    if (n <= 1)
+        return n;
+    if (term[n] != 0)
+        return term[n];
+ 
+    else {
+        term[n] = fib(n - 1) + fib(n - 2);
+ 
+        return term[n];
+    }
+}
