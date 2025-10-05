@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Limelight&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
-    background-color: yellow;
+    font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;
+  font-style: normal;*/
+  font-size: 18px;
+  font-style: normal;
 }
 
 .sr-only {
@@ -13,3 +20,32 @@ body {
     white-space: nowrap;
     width: 1px;
   }
+
+  .container{ /*wrapper*/
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+p {
+    line-height: 2em;
+    text-indent: 50px;
+    margin-bottom: 25px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Limelight", sans-serif;
+}
+
+nav ul li{ /*if you are a list item and it's parent is the uordered list and it's parent is the nav then do this*/
+    list-style: none; /*don't do a bullet pint*/
+}
+
+/*nav ul li a{
+    the link itself
+}
+
+nav ul li a:link{
+    /*link, visited, hover, action - set color  
+}*/
