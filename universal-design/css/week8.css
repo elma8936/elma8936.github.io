@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Limelight&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+table{
+    border: 3px solid black;
+    font-size: 1em;
+}
+tr{
+    background-color: lightgray;
+}
+td,th{
+    padding: 0.5em;
+}
+
+p {
+   font-family: "Reddit Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-size: 16px;
+  font-style: normal;
+    color: #1E293B;
+}
+
+.skip-link {
+  position: absolute;           
+  top: 0;
+  left: 0;
+  background: #0044cc;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0 0 0.5em 0;
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: translateY(0); 
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
