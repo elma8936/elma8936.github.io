@@ -3,114 +3,120 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tables, Forms, Tabbed Browsing and Screen Reading</title>
+        <title>Whale Watching</title>
         <link href="css/week8.css" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <a class="skip-link" href="#maincontent">Skip to main content</a>
         <header>
-            <h1>Tables, Forms, Tabbed Browsing and Screen Reading</h1>
+            <h1>Whale Watching Tours</h1>
         </header>
         <nav>
             <h2 class="sr-only">Main Navigation</h2>
             <ul>
-                <li><a href="#accessibleform">Accessible Form</a></li>
-                <li><a href="#datatable">Accessible Data Table</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Tours">Tours</a></li>
+                <li><a href="#durarationAndPrices">Tour Details</a></li>
+                <li><a href="#Book">Book</a></li>
             </ul>
         </nav>
+        <div class="container">
         <main id ="maincontent">
-        <section id="accessibleform">
-            <h2>Accessible Form</h2>
-            <form action="/my-handling-form-page" method="post">
-                <p>Please complete all required fields (*)</p>
-                <p>
-                    <label for="name">Firt and Last Name:*</label>
-                    <input type="text" id="name" name="user_name" required>
-                </p>
-                <p>
-                    <label for="mail">Email:*</label>
-                    <input type="email" id="mail" name="user_email" required>
-                </p>
-                <p>
-                    <label for="msg">Message:*</label>
-                    <textarea id="msg" name="user_message" required></textarea>
-                </p>
-                <p>
-                    <label for="password">Password:*</label>
-                    <input type="password" id="password" name="pwd" required>
-                </p>
-                
-                <fieldset>
-                    <legend>T-shirt Size*</legend>
-                    <p>
-                        <input type="radio" name="size" id="size_1" value="small" required>
-                        <label for="size_1">Small</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="size" id="size_2" value="medium" required>
-                        <label for="size_2">Medium</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="size" id="size_3" value="large" required>
-                        <label for="size_3">Large</label>
-                    </p>
-                </fieldset>
-                <p class="button">
-                    <button type="submit">Send your message</button>
-                </p>
-            </form>
-        </section>
-        <section id="datatable">
-            <h2>Accessible Data table</h2>
-            <h3>Boulder Weather <i class="material-icons">sunny</i></h3> 
-            <table>
-                <caption>
-                    This week's weather forcast
-                </caption>
-                <tr>
-                    <th colspan="2">Monday</th>
-                    <th colspan="2">Tuesday</th>
-                    <th colspan="2">Wednesday</th>
-                    <th colspan="2">Thursday</th>
-                    <th colspan="2">Friday</th>
-                    <th colspan="2">Saturday</th>
-                    <th colspan="2">Sunday</th>
-                </tr>
-                <tr>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>High</th>
-                    <th>Low</th>
-                </tr>
-                <tr>
-                    <td>57</td>
-                    <td>39</td>
-                    <td>65</td>
-                    <td>44</td>
-                    <td>72</td>
-                    <td>47</td>
-                    <td>58</td>
-                    <td>38</td>
-                    <td>58</td>
-                    <td>40</td>
-                    <td>52</td>
-                    <td>41</td>
-                    <td>62</td>
-                    <td>43</td>
-                </tr>
-            </table>
-        </section>
-    </main>
+            <section id="About">
+                <h2>About Whale Watching</h2>
+                <div class="icon">
+                    <span class="material-icons" aria-hidden="true">anchor</span>
+                </div>
+                <p>Whale watching trips daily, all year-round with Newport Landing. See giant blue whales, finback whales, gray whales and many more in their natural habitat and it's all possible on one of our whale watching cruises! With one the largest marine protected parks just outside of Newport Bay, whales and dolphin of all types can be viewed as soon as you leave the bay. Newport Whales offers some of the best whale watching California has to offer! Along with our California whale watching guide check out our Long Beach whale watching guide. Our whale watching tours serve Los Angeles whale watching enthusiasts by ship.</p>
+            </section>
+            <section id="Tours"> 
+                <h2>Tours</h2>
+                <div class="icon">
+                    <span class="material-icons" aria-hidden="true">directions_boat</span>
+                </div>
+                <h3>Whale Watching & Dolphin Cruise</h3>
+                <p>Select from several whale watching cruise times daily, year round. Our cruises view giant blue whales, finback whales, gray whales, humpback whales, several species of dolphin and more. * Processing & Check-in Fee 4% Applies</p>
+                <h3>Luxury Whale Watching - Fewer People, Extra Speed, Expert Staff</h3>
+                <p>Pamper you and your guests with this amazing whale watching cruise experience onboard our Catamaran Yacht. Limited number of guests per cruise . * Processing & Check-in Fee 4% Applies</p>
+                <h3>Ultimate Whale Watching- Intimate, Fast, More Sightings</h3>
+                <p>Fewer people, Faster and Travel Farther Means More & Better Sightings. Our fleet of Zodiac boats maximize your time and boost success!</p>
+            </section>
+            <section id="durarationAndPrices">
+                <h2>Tour Duration and Prices</h2>
+                <table class="mytable">
+                    <caption>Duration and Prices of Tours</caption>
+                    <thead>
+                        <tr>
+                            <th scope ="col">Tour</th>
+                            <th scope ="col">Duration</th>
+                            <th scope ="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Whale Watching & Dolphin Cruise</td>
+                            <td>120 Min</td>
+                            <td>$38</td>
+                        </tr>
+                        <tr>
+                            <td>Luxury Whale Watching</td>
+                            <td>150 Min</td>
+                            <td>$72</td>
+                        </tr>
+                        <tr>
+                            <td>Ultimate Whale Watching</td>
+                            <td>120 Min</td>
+                            <td>$84</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="Book">
+                <h3>Book Your Tour Today!</h3>
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend>Fill Out Personal Information to Book Tour</legend>
+                        <label for="username">
+                            Name:
+                            <input type ="text" id="username" placeholder ="first last" required>
+                        </label>
+                        <br>
+                        <label for="your-email">
+                            What is your email?
+                            <input type="email" id="your-email" placeholder ="example@gmail.com" required>
+                        </label>
+                        <br>
+                        <label for="phone">
+                            What is your phone number?
+                            <input type="tel" id="phone" minlength="10" placeholder="555-555-5555">
+                        </label>
+                        <br>
+                        <label for="age">
+                            How old are you 
+                            <input type="number" id="age" placeholder="35">
+                        </label>
+                        <br>
+                        <label for="date">
+                            What date woud you like to visit?
+                            <input type="date" id="date" required>
+                        </label>
+                        <br>
+                        <label for="tour">
+                            Which tour would you like to book?
+                            <select id="tour" required>
+                                <option value=""> Please choose a tour </option>
+                                <option value="Whale Watching & Dolphin Cruise">Whale Watching & Dolphin Cruise</option>
+                                <option value="Luxury Whale Watching">Luxury Whale Watching</option>
+                                <option value="Ultimate Whale Watching">Ultimate Whale Watching</option>
+                            </select>
+                        </label>
+                        <br>
+                        <input type="submit">
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        </div>
     </body>
 </html>
