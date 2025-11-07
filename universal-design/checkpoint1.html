@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- flexible grid (css grid)
+    two media queries 
+    viewport - turn scaling off-->
+    <title>Class Portal</title>
+    <link href="css/accessible-class-portal.css" rel="stylesheet">
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <div class="container">
+       <header>
+            <h1>Elizabeth Class Portal</h1>
+        </header>
+
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+                <li><a href=#aboutMe>About Me</a></li>
+                <li><a href=#assignments>Assignments</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="aboutMe">
+                <h2>About Me</h2>
+                <p>Elizabeth Mann is a student at CU Boulder currently pursuing a B.S. in Creative Technology and Design with a minor in Computer Science. Her personal and professional goals are to become a UX researcher and designer. She found her passion for UX while contributing to a large website redesign project, evaluating a heuristic evaluation. Elizabeth currently contributes to a team of UX designers on CU Boulder OIT’s User Experience Team. Elizabeth aims to increase accessibility and usability to the digital world. She hopes to leverage her computer science background in her UX research, content and design work. </p>
+            </section>
+            
+        </main>
+    
+        <aside id="aside1">
+            <figure>
+                <img src="img/Headshot.JPG" alt="Elizabeth Mann Headshot">
+            </figure>
+        </aside>
+        <aside id="aside2">
+            <section id="assignments">
+                <h2>Assignments</h2>
+                <ul>
+                    <li><a href="semantic-wiki.html">Lab #2 - Coding & Posting a Web Page - The Basics</a></li>
+                    <li><a href="week8.html">Lab #3 - Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+                    <li><a href="inclass/grid-flex.html">Lab #4 - Accessible CSS Layout</a></li>
+                </ul>
+            </section>
+        </aside>
+        <footer>University of Colorado Boulder</footer>
+    </div> <!-- end container  -->
+    
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class Portal</title>
+        <link href="css/accessible-class-portal.css" rel="stylesheet"> 
+    </head>
 <body>
     <h1>Accessible Class Portal</h1>
     <h2>Elizabeth Mann</h2>
@@ -10,9 +70,8 @@
         <ul>
             <li> <a href="semantic-wiki.html">Assignment 1: Wikipedia Page</a></li>
             <li><a href="week8.html">Assignment 2: Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
-            <li><a href="https://www.colorado.edu/">Assignment 3</a></li>
-            <li><a href="inclass/grid-flex.html">Assignment 4: Accessible CSS Layout</a></li>
+            <li><a href="inclass/grid-flex.html">Assignment 3: Accessible CSS Layout</a></li>
         </ul>
      </nav>
 </body>
-</html>
+</html> -->
