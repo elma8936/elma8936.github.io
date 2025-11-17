@@ -24,95 +24,11 @@ measure outside in instead of in out */
   }
 
 body{
-    background: lightgray;
+    background: #407899;
     font-family: sans-serif;
     font-size: 15px;
 }
 
-h1,
-h2,
-h3,
-nav{
-    font-family: "Reddit Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: .2em 0;
-}
-
-h2{
-     display: inline-block;
-    padding: 0.5em 1em;
-    background-color: lightblue;  
-    color: #000;
-    border-radius: 20px;       
-    font-weight: 600;  
-}
-
-
-
-p{
-      font-family: "Reddit Sans", sans-serif;
-    font-weight: normal;
-    margin: 1.8em 0;
-    line-height: 1.8em;
-}
-
-h2{font-size: 1.25em;}
-
-.skip-link {
-  position: absolute;           
-  top: 0;
-  left: 0;
-  background: #0044cc;
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 0 0 0.5em 0;
-  transform: translateY(-100%);     
-  transition: transform 0.3s ease;
-  z-index: 100;
-}
-
-.skip-link:focus {
-  transform: translateY(0); 
-}
-
-header,
-nav,
-main,
-aside,
-footer{
-    padding: 1.5em;
-    /* border: 1px black solid; */
-}
-
-header,
-footer{
-    text-align: center;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    background: rgb(175,222,176);
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns:1fr 2fr;
-    grid-template-areas: 
-    "heady heady"
-    "navvy navvy"
-    "aside1 mainy"
-    "aside1 mainy"
-    "aside2 aside2"
-    "footy footy";
-}
-
-header {grid-area: heady; background: #FAF9F6;}
-nav {grid-area: navvy; background: #FAF9F6}
-main {grid-area: mainy; background: #FAF9F6; max-height: 100%}
-#aside1 {grid-area: aside1; background: white;}
-#aside2 {grid-area: aside2; background: white;}
-footer {grid-area: footy;background: #FAF9F6;}
 
 nav {
   padding: 0;/* smaller top/bottom padding */
@@ -126,35 +42,84 @@ nav ul{
 nav a{
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: lightblue;  
+    background-color: #407899;  
     color: #000;
     border-radius: 20px;       
-    font-weight: 600;  
+    font-weight: 600;
+    color:white;
+    text-decoration: none;  
 }
 
 nav a:hover{
-    background-color: darkblue;  
-     color: white;
+    background-color: white;  
+    color:#407899;
 }
-
 
 nav ul li{
     list-style: none;
 }
 
-
-img{
-  display:block;
-  margin: auto;
-  width: 100%;
-  /* padding-top: 40px; */
-  border-radius: 8px;
+h1,
+h2,
+h3,
+nav{
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: .2em 0;
 }
 
-ul li{
-    padding: 1em;
-    list-style: none;
+p{
+    font-family: "Reddit Sans", sans-serif;
+    font-weight: normal;
+    margin: 1.8em 0;
+    line-height: 1.8em;
 }
+
+h2{font-size: 1.25em;}
+
+header,
+nav,
+main,
+aside,
+footer{
+    padding: 1.5em;
+    /* border: 1px black solid; */
+}
+
+
+header,
+footer{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgb(175,222,176);
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-areas: 
+    "navvy navvy navvy"
+    "heady heady heady"
+    "mainy mainy mainy"
+    "aside1 aside1 aside1"
+    "aside2 aside2 aside2"
+    "footy footy footy";
+}
+
+header {grid-area: heady; background: white;}
+nav {grid-area: navvy; background: white}
+main {grid-area: mainy; background: white; max-height: 100%}
+#aside1 {grid-area: aside1; background: white;}
+#aside2 {grid-area: aside2; background: white}
+footer {grid-area: footy;background: white;}
+
+
+
+
 
 @media screen 
 and (min-width: 641px)
@@ -162,11 +127,12 @@ and (max-width: 900px){
 .container{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
+    "navvy navvy"
     "heady heady"
     "navvy navvy"
-    "aside1 mainy"
-    "aside1 mainy"
-    "aside2 aside2"
+    "mainy mainy"
+    "aside1 aside2"
+    "aside1 aside2"
     "footy footy";
 }
 }
@@ -176,8 +142,8 @@ and (max-width: 640px){
     .container{
         grid-template-columns: 1fr; 
         grid-template-areas: 
-        "heady"
         "navvy"
+        "heady"
         "mainy"
         "aside1"
         "aside2"
@@ -193,7 +159,7 @@ and (max-width: 640px){
         display: block;
         padding: 10px 5px;
         margin: 5px;
-        border: 1px black solid;
-        background: white;
+        background:#407899;
+        color: white;
     }
 }
