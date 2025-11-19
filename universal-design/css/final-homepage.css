@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Limelight&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-
-/* css reset - every element, before every element and after element. Box-risizing, 
-measure outside in instead of in out */
 *,
 *:before,
 *:after{
@@ -31,7 +28,7 @@ body{
 
 
 nav {
-  padding: 0;/* smaller top/bottom padding */
+  padding: 0;
 }
 nav ul{
     display: flex;
