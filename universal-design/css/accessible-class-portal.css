@@ -48,8 +48,6 @@ h2{
     font-weight: 600;  
 }
 
-
-
 p{
       font-family: "Reddit Sans", sans-serif;
     font-weight: normal;
@@ -107,12 +105,12 @@ footer{
     "footy footy";
 }
 
-header {grid-area: heady; background: #FAF9F6;}
-nav {grid-area: navvy; background: #FAF9F6}
-main {grid-area: mainy; background: #FAF9F6; max-height: 100%}
+header {grid-area: heady; background: white;}
+nav {grid-area: navvy; background: white}
+main {grid-area: mainy; background: white; max-height: 100%}
 #aside1 {grid-area: aside1; background: white;}
 #aside2 {grid-area: aside2; background: white;}
-footer {grid-area: footy;background: #FAF9F6;}
+footer {grid-area: footy;background:white;}
 
 nav {
   padding: 0;/* smaller top/bottom padding */
