@@ -1,5 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Limelight&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+.currentPage{
+    background-color: white;
+    color: #407899;
+    border: 2px #407899 solid;
+}
+
+.center{
+    text-align: center;
+    color:#407899;
+    font-size: larger;
+}
+
+.btn-link{
+    text-decoration: none;
+    color:inherit;
+    display: block;
+}
+
+.btn{
+     background-color: white;
+    color:black;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1em;
+     border: 3px #407899 solid;
+
+}
+
+.btn:hover{
+    background-color: #dedcdc;
+}
+
+.skip-link {
+  position: absolute;           
+  top: 0;
+  left: 0;
+  background: white;
+  color: black;
+  padding: 0.5em 1em;
+  border-radius: 0 0 0.5em 0;
+  transform: translateY(-100%); 
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  transform: translateY(0); 
+}
+
 *,
 *:before,
 *:after{
@@ -21,11 +72,10 @@
   }
 
 body{
-    background: #407899;
+    background: white;
     font-family: sans-serif;
     font-size: 15px;
 }
-
 
 nav {
   padding: 0;
@@ -40,7 +90,6 @@ nav a{
     display: inline-block;
     padding: 0.5em 1em;
     background-color: #407899;  
-    color: #000;
     border-radius: 20px;       
     font-weight: 600;
     color:white;
@@ -63,56 +112,88 @@ nav{
     font-family: "Reddit Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: .2em 0;
+    padding: 1em 0;
+    padding-bottom: 5px;
 }
+
+h1{
+    color:white;
+}
+
+h2{
+    /* font-weight: 600; */
+    font-size: 1.25em;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
 
 p{
     font-family: "Reddit Sans", sans-serif;
-    font-weight: normal;
-    margin: 1.8em 0;
-    line-height: 1.8em;
+   font-optical-sizing: auto;
+   font-size: 16px;
+   font-style: normal;
+    line-height: 1.5em;
+    /* text-indent: 50px; */
+    /* margin-bottom: 25px; */
 }
 
-h2{font-size: 1.25em;}
+li{
+    font-family: "Reddit Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-size: 16px;
+   margin-left: 40px;
+}
 
-header,
 nav,
 main,
 aside,
 footer{
     padding: 1.5em;
     /* border: 1px black solid; */
+    border-radius: 20px;
 }
+aside{
+    margin:1em;
+    color: white;
+}
+
 
 
 header,
 footer{
     text-align: center;
+    padding: 2em;
+    /* border-radius: 20px; */
 }
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(175,222,176);
+    background: white;
     display: grid;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     grid-template-columns:1fr 2fr 1fr;
     grid-template-areas: 
-    "navvy navvy navvy"
     "heady heady heady"
+    "navvy navvy navvy"
     "mainy mainy mainy"
     "aside1 aside1 aside1"
     "aside2 aside2 aside2"
     "footy footy footy";
 }
 
-header {grid-area: heady; background: white;}
-nav {grid-area: navvy; background: white}
+header {grid-area: heady; background:#407899;}
+nav {grid-area: navvy; background: white;}
 main {grid-area: mainy; background: white; max-height: 100%}
-#aside1 {grid-area: aside1; background: white;}
-#aside2 {grid-area: aside2; background: white}
-footer {grid-area: footy;background: white;}
+#aside1 {grid-area: aside1; background:#407899;}
+#aside2 {grid-area: aside2; background:#407899;}
+footer {grid-area: footy;background: #dedcdc;}
 
 
 
@@ -124,8 +205,8 @@ and (max-width: 900px){
 .container{
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "navvy navvy"
     "heady heady"
+    "navvy navvy"
     "navvy navvy"
     "mainy mainy"
     "aside1 aside2"
@@ -139,8 +220,8 @@ and (max-width: 640px){
     .container{
         grid-template-columns: 1fr; 
         grid-template-areas: 
+        "heady" 
         "navvy"
-        "heady"
         "mainy"
         "aside1"
         "aside2"
