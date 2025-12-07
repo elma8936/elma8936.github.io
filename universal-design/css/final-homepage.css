@@ -18,6 +18,10 @@
     display: block;
 }
 
+.indent{
+    margin-left: 40px;
+}
+
 .btn{
      background-color: white;
     color:black;
@@ -106,7 +110,6 @@ nav ul li{
 }
 
 h1,
-h2,
 h3,
 nav{
     font-family: "Reddit Sans", sans-serif;
@@ -118,13 +121,14 @@ nav{
 
 h1{
     color:white;
+    font-size: 28px;
 }
 
 h2{
-    /* font-weight: 600; */
     font-size: 1.25em;
     font-family: "Oswald", sans-serif;
     font-size: 24px;
+    padding: 1em 0;
 }
 
 h3{
@@ -138,37 +142,26 @@ p{
    font-size: 16px;
    font-style: normal;
     line-height: 1.5em;
-    /* text-indent: 50px; */
-    /* margin-bottom: 25px; */
 }
 
 li{
     font-family: "Reddit Sans", sans-serif;
-   font-optical-sizing: auto;
-   font-size: 16px;
-   margin-left: 40px;
+    font-optical-sizing: auto;
+    font-size: 16px;
 }
 
 nav,
 main,
-aside,
 footer{
     padding: 1.5em;
-    /* border: 1px black solid; */
     border-radius: 20px;
 }
-aside{
-    margin:1em;
-    color: white;
-}
-
 
 
 header,
 footer{
     text-align: center;
     padding: 2em;
-    /* border-radius: 20px; */
 }
 
 .container{
@@ -177,22 +170,17 @@ footer{
     background: white;
     display: grid;
     width: 100vw;
-    /* height: 100vh; */
     grid-template-columns:1fr 2fr 1fr;
     grid-template-areas: 
     "heady heady heady"
     "navvy navvy navvy"
     "mainy mainy mainy"
-    "aside1 aside1 aside1"
-    "aside2 aside2 aside2"
     "footy footy footy";
 }
 
 header {grid-area: heady; background:#407899;}
 nav {grid-area: navvy; background: white;}
 main {grid-area: mainy; background: white; max-height: 100%}
-#aside1 {grid-area: aside1; background:#407899;}
-#aside2 {grid-area: aside2; background:#407899;}
 footer {grid-area: footy;background: #dedcdc;}
 
 
@@ -209,8 +197,6 @@ and (max-width: 900px){
     "navvy navvy"
     "navvy navvy"
     "mainy mainy"
-    "aside1 aside2"
-    "aside1 aside2"
     "footy footy";
 }
 }
@@ -223,8 +209,6 @@ and (max-width: 640px){
         "heady" 
         "navvy"
         "mainy"
-        "aside1"
-        "aside2"
         "footy";
     }
     
