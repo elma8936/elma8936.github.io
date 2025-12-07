@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Limelight&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
-
-/* css reset - every element, before every element and after element. Box-risizing, 
-measure outside in instead of in out */
 *,
 *:before,
 *:after{
@@ -24,7 +21,7 @@ measure outside in instead of in out */
   }
 
 body{
-    background: lightgray;
+    background: white;
     font-family: sans-serif;
     font-size: 15px;
 }
