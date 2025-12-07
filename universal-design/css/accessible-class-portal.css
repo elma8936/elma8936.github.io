@@ -91,7 +91,7 @@ footer{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(175,222,176);
+    background: white;
     display: grid;
     width: 100vw;
     height: 100vh;
